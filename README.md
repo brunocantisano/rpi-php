@@ -58,7 +58,7 @@ Volume: `/app`
 
 ```bash
 docker run --name apache-php \
-           -d -p 9430:80 \
+           -d -p 9420:80 \
            -v /media/usbraid/docker/php:/app \
            paperinik/rpi-php
 ```
