@@ -56,8 +56,6 @@ Volume: `/app`
 
 ### Running
 
-Run as bellow:
-
 ```bash
 docker run --name apache-php -p 9430:80 -v /media/usbraid/docker/php:/app paperinik/rpi-php
 ```
