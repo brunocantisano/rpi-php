@@ -7,8 +7,8 @@ This Docker container implements a Apache PHP. Version 4.1.1
 
 | Program          | Version   |
 | ---------------- |:----------|
-| Php              | 4.3.1     |
-| Apache           | 2.2.0     |
+| Php              | 5.6.30    |
+| Apache           | 2.0       |
 
  * Raspbian base image: resin/rpi-raspbian.
  
@@ -57,5 +57,8 @@ Volume: `/app`
 ### Running
 
 ```bash
-docker run --name apache-php -p 9430:80 -v /media/usbraid/docker/php:/app paperinik/rpi-php
+docker run --name apache-php \
+           -d -p 9430:80 \
+           -v /media/usbraid/docker/php:/app \
+           paperinik/rpi-php
 ```
